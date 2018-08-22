@@ -13,7 +13,7 @@ set_name = 'train'   #['train', 'val']
 # You need to specify the dataset dir
 dataset_dir = '/media/samsumg_1tb/ApolloScape/ECCV2018_apollo/train/'
 img_list = [line.rstrip('\n')[:-4] for line in open(os.path.join(dataset_dir, 'split', set_name + '.txt'))]
-save_dir = os.path.join(dataset_dir, 'Mesh_overlay')
+# save_dir = '/media/samsumg_1tb/zzy/Mesh_overlay'
 
 setting = Setting(None, dataset_dir)
 visualizer = CarPoseVisualizer(setting)
